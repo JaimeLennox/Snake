@@ -1,0 +1,19 @@
+-2 player (MAP BIGGER)
+	-one person controls food
+	-2 snakes, limited food
+		-Hitting each other ends game
+		-Hitting self cuts tail/score (or leading player could just suicide to win)
+	-powerups (appear for short times)( red and blue tiles- red acts on other player blue on you)
+		-good powerups
+			-increase score/length
+			-brief invulnerability
+			-reduce other player score
+		-bad powerups (low frequency)
+			-reduce score
+			-increase other player score
+-1 player
+	-gets faster and faster
+	-hitting self removes part of snake/score, walls lethal
+	-Food tiles become lethal once eaten
+	-walls not lethal
+	-walls are lethal
