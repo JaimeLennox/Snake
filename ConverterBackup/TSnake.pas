@@ -1,12 +1,10 @@
 unit TSnake;
 
-{$MODE Delphi}
-
 interface
 
 uses
-  LCLIntf, LCLType, LMessages, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, ExtCtrls, StdCtrls, SnakeObjects, Menus, FileUtil;
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, ExtCtrls, StdCtrls, SnakeObjects, Menus;
 
 type
   TfSnake = class(TForm)
@@ -51,7 +49,7 @@ const
 
 implementation
 
-{$R *.lfm}
+{$R *.dfm}
 
 procedure TfSnake.GameMode(mode:integer);
 begin
@@ -102,7 +100,7 @@ var
   scorefile:textfile;
 begin
   assignfile(scorefile,'../../highscores.txt');
-  if FileExistsUTF8('../../highscores.txt') { *Converted from FileExists*  } then
+  if fileexists('../../highscores.txt') then
   begin
     reset(scorefile);
     readln(scorefile,scorecheck);

@@ -1,10 +1,8 @@
 unit SnakeObjects;
 
-{$MODE Delphi}
-
 interface
 
-uses LCLIntf, LCLType, LMessages, Messages, SysUtils, Variants, Classes, Graphics,
+uses Windows, Messages, SysUtils, Variants, Classes, Graphics,
      Controls, Extctrls, Forms, Dialogs, StdCtrls;
 
 type
