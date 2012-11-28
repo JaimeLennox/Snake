@@ -1,0 +1,6 @@
+*.compiled
+*.lps
+*.o
+*.or
+*.ppu
+*.exe
