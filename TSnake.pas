@@ -204,7 +204,7 @@ begin
   randomize;
   doublebuffered:=true;
 
-  Color:=clDefault;
+  Color:=clBlack;
   Width:=580;
   Height:=700;
   for i := 1 to gridnum do
@@ -224,7 +224,7 @@ begin
   with title do
   begin
     parent:=self;
-    font.Size:=25;
+    font.Size:=20;
     font.Color:=clLime;
     Caption:='GAME OVER';
     left:=fsnake.Width div 3- fsnake.Width div 5;
@@ -235,7 +235,7 @@ begin
   with score do
   begin
     parent:=self;
-    font.Size:=25;
+    font.Size:=20;
     font.Color:=clLime;
     left:=fsnake.width div 3-2*width;
     top:=50;
@@ -245,7 +245,7 @@ begin
   with hscore do
   begin
     parent:=self;
-    font.Size:=25;
+    font.Size:=20;
     font.Color:=clLime;
     left:=fsnake.Width *2 div 3-fsnake.Width div 5;
     top:=50;
